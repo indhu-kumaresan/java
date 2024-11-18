@@ -1,0 +1,37 @@
+package Task;
+
+import java.util.Scanner;
+
+public class oddeven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the number");
+		int num = sc.nextInt();
+		int j=0;
+		int k=0;
+		int[] even = new int[num/2];
+		int[] odd = new int[num/2];
+		for(int i=1;i<=num;i++) {
+			if(i%2==0) {
+				even[j]=i;
+				j++;
+			}
+			if(i%2!=0) {
+				  odd[k]=i;
+				  k++;
+			}
+		}
+		System.out.println("EVEN NUMBERS");
+		for(int x:even){
+			System.out.println(x);
+		}
+	
+		System.out.println("ODD NUMBERS");
+		for(int x:odd){
+			System.out.println(x);
+		}
+	}
+
+}
