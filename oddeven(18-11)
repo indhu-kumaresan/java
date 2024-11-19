@@ -8,7 +8,7 @@ public class oddeven {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the number");
-		int num = sc.nextInt();
+		int num = sc.nextInt();              
 		int j=0;
 		int k=0;
 		int[] even = new int[num/2];
