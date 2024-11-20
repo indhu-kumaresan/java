@@ -1,0 +1,25 @@
+package Task;
+
+import java.util.Scanner;
+
+public class Perfectsqaure {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int num = sc.nextInt();
+	    double sqr = Math.sqrt(num);
+	    double  prsqr = sqr - (Math.floor(sqr)); 
+	    if(prsqr==0) {
+	    	System.out.println("the number is a perfect square");
+	    }
+	    else {
+	    	System.out.println("the number is not a  perfect square");
+	    }
+	    
+
+	}
+
+}
+
