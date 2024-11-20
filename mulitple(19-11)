@@ -1,0 +1,28 @@
+package Task;
+
+import java.util.Scanner;
+
+public class Mulitple {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number above 1:");
+		int num = sc.nextInt();
+		if(num%2==0) {
+			System.out.println("It is a multiple of 2");
+		}
+		else {
+			System.out.println("It is not a multiple of 2");
+		}
+		System.out.println("Multiples of 1 from 2 to "+ num);
+		for(int i=2;i<=num;i++) {
+			if(i%2==0){
+				System.out.print(i + " ");
+			}
+		}
+
+		sc.close();
+	}
+
+}
