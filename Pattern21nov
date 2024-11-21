@@ -1,0 +1,40 @@
+package Task;
+
+import java.util.Scanner;
+
+public class Patterntsk {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);                     // first pattern
+		System.out.println("enter the no of rows:");               54321
+		int n = sc.nextInt();                                      432
+		for(int i=1;i<=n;i++) {                                    32
+			for(int j=n;j>=i;j--) {                                  1
+				System.out.print(j+"");	
+			}
+			System.out.println();
+		}
+
+//second patter 
+11111
+2222
+333
+44
+5
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=n;j>=i;j--) {
+				System.out.print(i+"");	
+			}
+			System.out.println();
+		}
+		
+	
+		
+		
+		
+ sc.close();
+	}
+
+}
