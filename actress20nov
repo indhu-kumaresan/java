@@ -1,0 +1,81 @@
+package Task;
+
+import java.util.Scanner;
+
+public class Actress {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the actor name:");
+		System.out.println("1) Vijay");
+		System.out.println("2) Rajini");
+		System.out.println("3) Kamal");
+		int inp = sc.nextInt();
+		sc.nextLine();
+		
+		switch(inp) {
+		case 1:
+			//vijay 
+			System.out.println("select the actress:");
+			System.out.println("1)samantha");
+			System.out.println("2)kajal");
+			System.out.println("3)asin");
+		     int choice =  sc.nextInt();
+		     switch(choice) {
+		     case 1: System.out.println("vijay and samantha acted in theri");
+		              break;
+		     case 2: System.out.println("vijay and kajal acter in thuppaki ");
+		              break;
+		     case 3: System.out.println("vijay and asin acted in pokiri");
+		             break;
+		     default: 
+		    	 System.out.println(" select the correct option");
+		    	 break;
+		     }
+		     break;
+		case 2:
+			//rajini 
+			System.out.println("select the actress:");
+			System.out.println("1)ramyakrishnan");
+			System.out.println("2)deepika");
+			System.out.println("3)tamanna");
+		     int choice1 =  sc.nextInt();
+		     switch(choice1) {
+		     case 1: System.out.println("rajini  and ramyakrishnan acted in padaiyappa");
+		              break;
+		     case 2: System.out.println("rajini and deepika acted in kochadayan");
+		              break;
+		     case 3: System.out.println("rajini and tammana acted in dharbar");
+		             break;
+		     default: 
+		    	 System.out.println(" select the correct option");
+		    	 break;
+		     }
+		     break;
+		case 3:
+			//kamal
+			System.out.println("select the actress:");
+			System.out.println("1)saranya");
+			System.out.println("2)pooja");
+			System.out.println("3)revathi ");
+		     int choice2 =  sc.nextInt();
+		     switch(choice2) {
+		     case 1: System.out.println("kamal and sarnaya acted in nayaka");
+		              break;
+		     case 2: System.out.println("kamal and pooja acted in vishwaroopam ");
+		              break;
+		     case 3: System.out.println("kamal and revathi  acted in devarmagan");
+		             break;
+		     default: 
+		    	 System.out.println(" select the correct option");
+		    	 break;
+		     }
+		     break;
+		     
+		    default:
+		    	System.out.println("select the correct option");
+			}
+	}
+
+}
