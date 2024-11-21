@@ -1,0 +1,108 @@
+package Task;
+
+import java.util.Scanner;
+
+public class Swexample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the actor name:");
+		System.out.println("1) Vijay");
+		System.out.println("2) Rajini");
+		System.out.println("3) Kamal");
+		int inp = sc.nextInt();
+		sc.nextLine();
+		switch (inp) {
+		case 1:
+			System.out.println("-kajal\n-tamanna\n-trisha\n-asin\n");
+			System.out.println("************");
+			System.out.println("enter the actress:");
+			String mov = sc.nextLine();
+			switch(mov) {
+			case "kajal":
+				System.out.println("jilla");
+				System.out.println("It is a flop movie");
+				break;
+			case "tamanna":
+				System.out.println("sura");
+				System.out.println("It is a flop movie");
+				break;
+			case "trisha":
+				System.out.println("gilli");
+				System.out.println("It is a hit movie");
+				break;
+			case "asin":
+				System.out.println("pokiri");
+				System.out.println("It is a hit movie");
+				break;
+			default:
+				System.out.println(" enter an actress  from the list");
+				break;
+		  	}
+			break;
+		case 2:
+			System.out.println("-deepika\n-manjima\n-tamanna\n-ramyakrishnan\n");
+			System.out.println("************");
+			System.out.println("enter the movie:");
+			String mov1 = sc.nextLine();
+			switch(mov1) {
+			case "deepika":
+				System.out.println("kochadayan");
+				System.out.println("It is a flop movie");
+				break;
+			case "manjima":
+				System.out.println("vettayan");
+				System.out.println("It is a flop movie");
+				break;
+			case "tamanna":
+				System.out.println("basha");
+				System.out.println("It is a hit movie");
+				break;
+			case "ramyakrishnan":
+				System.out.println("dharbar");
+				System.out.println("It is a hit movie");
+				break;
+			default:
+				System.out.println(" enter an actress from the list");
+				break;
+		  	}
+			break;
+		case 3:
+			System.out.println("-samantha\n-tamanna\n-saranya\n-kajal");
+			System.out.println("************");
+			System.out.println("enter the movie:");
+			String mov2 = sc.nextLine();
+			switch(mov2) {
+			case "samantha":
+				System.out.println("indian2");
+				System.out.println("It is a flop movie");
+				break;
+			case "kajal":
+				System.out.println("uthamavillan");
+				System.out.println("It is a flop movie");
+				break;
+			case "tamanna":
+				System.out.println("devarmagan");
+				System.out.println("It is a hit movie");
+				break;
+			case "saranya":
+				System.out.println("indian1");
+				System.out.println("It is a hit movie");
+				break;
+			default:
+				System.out.println(" enter a movie from the list");
+				break;
+		  	}
+			break;
+			
+		default:
+			System.out.println("select an actor");
+			break;	
+				
+		}
+		
+		 
+	}
+
+}
