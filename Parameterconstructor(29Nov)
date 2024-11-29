@@ -1,0 +1,29 @@
+package Task;
+
+public class Paraconst {
+	int id;
+    String name;
+    int sal;
+        Paraconst(int id, String name , int sal) {
+    	   this.id= id;
+    	   this.name =name;
+    	   this.sal = sal;
+       }
+        
+        void display() {
+        	System.out.println("EMPLOYEE DETAILS");
+        	System.out.println("******************");
+        	System.out.println("Name: "+ name);
+        	System.out.println("ID: "+ id);
+        	System.out.println("Salary: "+ sal);
+        	
+        }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Paraconst ob1 = new Paraconst(101,"Meeena",3000);
+		ob1.display();
+		
+
+	}
+
+}
