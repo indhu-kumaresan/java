@@ -1,0 +1,38 @@
+package Task;
+
+public class Bookdet {
+	  String title;
+	  String author;
+	  int isbn;
+   
+	  void addbook(String title, String author , int isbn) {
+		 this.title = title;
+		 this.author = author;
+		 this.isbn = isbn;
+		 
+		 System.out.println("Book is created successfully");
+	  }
+	  void display() {
+		  System.out.println("BOOK INFO");
+		  System.out.println("*********");
+		  System.out.println("TITLE: "+ title);
+		  System.out.println("AUTHOR:"+ author);
+		  System.out.println("ISBN: "+ isbn);			
+	  }
+	  
+	  void removebook(Bookdet ob) {
+		  ob = null;
+		  System.out.println("book removed sucessfully");
+	  }
+	  
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bookdet ob1 = new Bookdet();
+		ob1.addbook("Harry potter","JK rowling",1234);
+		ob1.display();
+		ob1.removebook(ob1);
+		
+
+	}
+
+}
