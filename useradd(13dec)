@@ -1,0 +1,48 @@
+package Task;
+
+import java.util.Scanner;
+
+public class Submatrix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("enter the rows and coloums for matrix");
+		Scanner sc = new Scanner(System.in);
+		int row = sc.nextInt();
+		int col = sc.nextInt();
+		int[][] a = new int[row][col];
+		int[][] b = new int[row][col];
+		int[][] c = new int[row][col];
+		System.out.println("enter the matrix a elements");
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<col;j++) {
+				a[i][j] = sc.nextInt();
+				
+			}  
+		}
+		
+		System.out.println("enter the matrix b elements");
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<col;j++) {
+				b[i][j] = sc.nextInt();
+				
+			}  
+		}
+		
+		for(int i=0; i<row;i++) {
+			for(int j=0; j<col; j++) {
+				c[i][j] =a[i][j]+b[i][j];
+			}
+		}
+		
+		System.out.println("the addition of the matrixes are");
+		for(int i=0; i<row;i++) {
+			for(int j=0;j<row;j++) {
+				System.out.print(c[i][j]+ " ");
+			}
+			System.out.println();
+		}
+		
+	}
+
+}
