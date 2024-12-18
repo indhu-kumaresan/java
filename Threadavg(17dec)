@@ -1,0 +1,33 @@
+package Task;
+class Subavg extends Thread{
+	int[] marks;
+	double average;
+	double total;
+	public  Subavg(int[] marks) {
+		this.marks = marks;
+	}
+	public void run() {
+		for( int mark:marks) {
+			total = total + mark;
+		}
+		average = total / (double)marks.length; 
+	}
+	
+	public double getavg() {
+		return average;
+	}
+	
+	
+}
+public class Subjectaverage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] marks = {20,30,40,50,70};
+		Subavg sb = new Subavg(marks);
+		sb.start();
+		System.out.println("the average marks is " + sb.getavg());
+
+	}
+
+}
