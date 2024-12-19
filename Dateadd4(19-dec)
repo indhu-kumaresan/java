@@ -1,0 +1,21 @@
+package Task;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+public class Adddate {
+    public static void main(String[] args) {
+     
+        Scanner scanner = new Scanner(System.in);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+         System.out.print("Enter the date in YYYY-MM-DD format: ");
+        String inputDate = scanner.nextLine();
+       LocalDate userDate = LocalDate.parse(inputDate, formatter);
+        LocalDate modifiedDate = userDate.plusDays(4).plusMonths(4).plusYears(4);
+        System.out.println("Original date: " + userDate);
+        System.out.println("Modified date: " + modifiedDate);
+
+        scanner.close();
+    }
+}
