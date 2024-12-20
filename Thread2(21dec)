@@ -1,0 +1,26 @@
+package Task;
+class Cnt extends Thread {
+     static int counter = 0;  
+
+    public synchronized void run() {
+        
+            counter++;
+            System.out.println("Thread " + Thread.currentThread().getName() + " is executing, Counter: " + counter);
+        
+    }
+}
+
+public class Threadex {
+    public static void main(String[] args) throws InterruptedException {
+        Cnt p1 = new Cnt();
+        Cnt p2 = new Cnt();
+        Cnt p3 = new Cnt();
+
+        p1.start(); 
+        p2.start();  
+        p3.start(); 
+
+
+        System.out.println("All threads have finished executing.");
+    }
+}
