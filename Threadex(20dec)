@@ -1,0 +1,24 @@
+class Counter extends Thread {
+    static int counter = 0;
+    public synchronized static void increment() {
+        counter++;
+        System.out.println("Thread " + Thread.currentThread().getName() + " incremented counter: " + counter);
+    }
+
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            increment();  
+        }
+    }
+}
+
+public class Threadex3 {
+    public static void main(String[] args) throws InterruptedException {
+        Counter c = new Counter();
+        Counter d = new Counter();
+
+        c.start();  
+        d.start(); 
+
+    }
+}
